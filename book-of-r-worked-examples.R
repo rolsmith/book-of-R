@@ -594,3 +594,4 @@ chap4.3 <- matrix(data=c(firstname,sex.char,mob),nrow=8)
 chap4.3
 
 #Add to gitbhub
+#Check push to github
