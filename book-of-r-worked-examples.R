@@ -595,3 +595,82 @@ chap4.3
 
 #Add to gitbhub
 #Check push to github
+
+##%######################################################%##
+#                                                          #
+####          Chapter 10: Conditions and Loops          ####
+#                                                          #
+##%######################################################%##
+
+### 10.1.2 else Statements
+
+a <- 3
+mynumber <- 4
+if (a<=mynumber){
+  cat("Condition was",a<=mynumber)
+  a <- a^2
+} else {
+  cat("Condition was", a<=mynumber)
+  a <- a-3.5
+}
+a
+mynumber <- 4
+if (a<=mynumber){
+  cat("Condition was",a<=mynumber)
+  a <- a^2
+} else {
+  cat("Condition was", a<=mynumber)
+  a <- a-3.5
+}
+a
+
+### 10.1.2 Using ifelse for Element-wise checks
+
+x <- 5
+y <- -5:5
+y
+
+y==0
+
+result <- ifelse(test=y==0, yes=NA, no=x/y)
+result
+
+##%######################################################%##
+#                                                          #
+####                   Exercise 10.1                    ####
+#                                                          #
+##%######################################################%##
+
+### Exercise 10.1.a
+
+vec1 <- c(2,1,1,3,2,1,0)
+vec2 <- c(3,8,2,2,0,0,0)
+
+if((vec1[1]+vec2[2])==10) {
+  cat("Print me!")
+}
+
+if(vec1[1]>=2 && vec2[1]>=2) {
+  cat("Print me!")
+}
+
+if (!is.na(vec2[3])) {
+  cat("Print me!")
+}
+
+?cat
+
+### Exercise 10.1.b
+
+ifelse(test=(vec1+vec2)>3, yes=vec1*vec2, no=vec1+vec2)
+
+### Exercise 10.1.c
+
+mymat <-matrix(as.character(1:16),4,4)
+
+diag(mymat)
+?any
+if(any(substr(diag(mymat)=="g"))||any(substr(diag(mymat)=="G"))) {
+  put.here <- 
+}
+  
